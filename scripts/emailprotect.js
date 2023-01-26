@@ -98,6 +98,6 @@ window.setTimeout(() => {
   document.querySelectorAll('[data-decode-email]').forEach(e => {
     const decoded = DataProtect.decodeData(e.getAttribute('data-decode-email'), options)
     e.href = "mailto:" + decoded + "?subject=Contact"
-    // e.textContent = decoded
+    e.textContent = decoded
   })
 }, 3000) // set delay here

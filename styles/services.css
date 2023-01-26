@@ -209,6 +209,15 @@ article {
     gap: 2rem;
 }
 
+.contactform {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 var(--horizontal-padding) 0 var(--horizontal-padding);
+    margin-bottom: 2rem;
+}
+
 
 
 
