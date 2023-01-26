@@ -132,7 +132,7 @@ document.addEventListener("scroll", (event) => {
 function adjustHeader() {
     var headerlineheight = scaleValue(window.scrollY, [0,100], [80,25]);
 
-    yPos = window.scrollY / 3;
+    yPos = window.scrollY / 2;
 
     newSize = headerSize - yPos;
 

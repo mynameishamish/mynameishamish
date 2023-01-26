@@ -30,6 +30,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
+  padding: 0 var(--horizontal-padding) 0 var(--horizontal-padding);
+
 }
 
 #headerTitle {
@@ -47,7 +49,7 @@
 }
 
 .headerLinks .extLink {
-  font-size: 8pt;
+  /* font-size: 8pt; */
 }
 
 
@@ -87,7 +89,7 @@ div.wiper {
 
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .headercontainer {
     flex-direction: column;
     text-align: center;

@@ -73,13 +73,14 @@ article {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    border-top: 2px solid;
 }
 
 .servicescard {
     display: flex;
     flex-direction: column;
     width: 33.33333%;
-    border: var(--line-width) solid;
+    border: 2px solid;
     border-color: var(--background);
 }
 

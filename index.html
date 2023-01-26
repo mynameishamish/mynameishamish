@@ -65,7 +65,7 @@
           <div class="landing" id="landing">
 
             <div class="landinggallery" id="gallery">
-              <a class="landinggalleryslide" href="" rel="">
+              <a class="landinggalleryslide" href="/projects/im.html" rel="">
                 <div class="gallerypic">
                   <picture>
                     <source type="image/avif" src="img/avif/im-portrait-d.avif"/>
@@ -78,7 +78,7 @@
                 </div>
               </a>
   
-              <a class="landinggalleryslide" href="" rel="">
+              <a class="landinggalleryslide" href="/projects/spyderbot.html" rel="">
                 <div class="gallerypic">
                   <picture>
                     <source type="image/avif" src="img/avif/spyderbot-portrait-d.avif"/>
@@ -91,7 +91,7 @@
                 </div>
               </a>  
   
-              <a class="landinggalleryslide" href="" rel="">
+              <a class="landinggalleryslide" href="/projects/vw.html" rel="">
                 <div class="gallerypic">
                   <picture>
                     <source type="image/avif" src="img/avif/vw-portrait-d.avif"/>
@@ -104,7 +104,7 @@
                 </div> 
               </a> 
                   
-              <a class="landinggalleryslide" href="" rel="">
+              <a class="landinggalleryslide" href="/projects/portal.html" rel="">
                 <div class="gallerypic">
                   <picture>
                     <source type="image/avif" src="img/avif/portal-portrait-d.avif"/>
@@ -116,7 +116,7 @@
                   </picture>
                 </div>  
                     
-              <a class="landinggalleryslide" href="" rel="">
+              <a class="landinggalleryslide" href="/projects/audi.html" rel="">
                 <div class="gallerypic">
                   <picture>
                     <source type="image/avif" src="img/avif/audi-portrait-d.avif"/>
@@ -129,7 +129,7 @@
                 </div> 
               </a>
                 
-              <a href="" class="landinggalleryslide" rel="">
+              <a href="/projects/sparse.html" class="landinggalleryslide" rel="">
                 <div class="gallerypic">
                   <picture>
                     <source type="image/avif" src="img/avif/sparse-portrait-d.avif"/>
@@ -142,7 +142,7 @@
                 </div> 
               </a>      
               
-              <a href="" class="landinggalleryslide" rel="">
+              <a href="/projects/micbot.html" class="landinggalleryslide" rel="">
                 <div class="gallerypic">
                   <picture>
                     <source type="image/avif" src="img/avif/micbot-portrait-d.avif"/>
@@ -174,7 +174,7 @@
     
                 </div>
                 <div class="landingCol2Lower" style="display: flex;/*! flex-direction: column; */justify-content: end;">
-                  <button>see how i do this</button>
+                  <a class="button" href="/services.html">see how i do this</a>
                 </div>
               </div> 
             </div>
@@ -182,19 +182,20 @@
             <div class="contentcontainer" style="border-top: solid var(--line-width) var(--primary-color)">
               <div class="content1">
                 <div class="contenttextblock">
-                  <p><a>Volkswagen Group of America</a></p>
+                  <p><a href="/projects/vw.html" onmouseover="imageswitchon(this.closest('.contentcontainer'),`vw-thumb`)"
+                    onmouseout="imageswitchoff(this.closest('.contentcontainer'),`vw-thumb`)">Volkswagen Group of America</a></p>
                 </div>
                 <div class="contenttextblock">
                   <p>Designing next generation self driving vehicles to improve tomorrows mobility landscape.</p>
                 </div>
                 <div class="contenttextblock">
-                  <button onmouseover="imageswitchon(this.closest('.contentcontainer'),`vw-thumb`)"
-                  onmouseout="imageswitchoff(this.closest('.contentcontainer'),`vw-thumb`)">See More Projects</button>
+                  <a class="button" href="/work.html" onmouseover="imageswitchon(this.closest('.contentcontainer'),`vw-thumb`)"
+                  onmouseout="imageswitchoff(this.closest('.contentcontainer'),`vw-thumb`)">See Other Projects</a>
                 </div>                
 
               </div>
               <div class="content2">
-                <div class="contentimage">
+                <div class="contentimage"><a href="/projects/vw.html">
                   <picture class="">
                     <source/>
                     <img src="img/vw-thumb-d.png" 
@@ -202,6 +203,7 @@
                     onmouseout="thumbOut(this),this.src='img/vw-thumb-d.png'" 
                     alt="more information about the volkswagen projects"/>
                   </picture>
+                </a>
                 </div>
               </div>
             </div>
@@ -209,10 +211,10 @@
             <div class="landingservices">
               <div class="landingservicesbanner">
                 <div style="flex:2">
-                  <h4>Take your idea from; 0 to 1, napkin sketch to on the shelves, from where you are to where you need to be.</h4>
+                  <h3>Take your idea from; 0 to 1, napkin sketch to on the shelves, from where you are to where you need to be.</h3>
                 </div>
-                <div style="flex:1">
-                  <button>See Design Services</button>
+                <div style="flex:1;display:flex;height:fit-content;justify-content:flex-end;padding-right:var(--horizontal-padding);">
+                  <a class="button" href="/services.html">See Design Services</a>
                 </div>
               </div>
 
@@ -220,7 +222,7 @@
 
                 <div class="landingservicesblock">
                   <div class="">
-                    <h4>Research</h4>
+                    <h3>Research</h3>
                   </div>
                   <div class="">
                     <p>Elegantly solve strongly felt pain points.</p>
@@ -228,7 +230,7 @@
                 </div>
                 <div class="landingservicesblock">
                   <div class="">
-                    <h4>Design</h4>
+                    <h3>Design</h3>
                   </div>
                   <div class="">
                     <p>Elegantly solve strongly felt pain points.</p>
@@ -236,7 +238,7 @@
                 </div>
                 <div class="landingservicesblock">
                   <div class="">
-                    <h4>Build</h4>
+                    <h3>Build</h3>
                   </div>
                   <div class="">
                     <p>Experience prototyping to give us a North Star.</p>
@@ -244,7 +246,7 @@
                 </div>
                 <div class="landingservicesblock">
                   <div class="">
-                    <h4>Test</h4>
+                    <h3>Test</h3>
                   </div>
                   <div class="">
                     <p>Testing with those who can benefit the most.</p>
@@ -252,7 +254,7 @@
                 </div>
                 <div class="landingservicesblock">
                   <div class="">
-                    <h4>Iterate</h4>
+                    <h3>Iterate</h3>
                   </div>
                   <div class="">
                     <p>Building features sets while keeping our magic..</p>
@@ -260,7 +262,7 @@
                 </div>
                 <div class="landingservicesblock">
                   <div class="">
-                    <h4>Package</h4>
+                    <h3>Package</h3>
                   </div>
                   <div class="">
                     <p>Future proofing our design intention for production. </p>
@@ -289,7 +291,7 @@
           <div class="landingcontact">
             <div class="landingCol2">
               <p>Based in Taipei, Born in Aotearoa New Zealand, 1/2 of <a href="http://earthbodies.website/" target="_blank">earthbodies</a>.</p>
-              <button style="width:fit-content">more about me</button>
+              <a class="button" href="/about.html" style="width:fit-content">more about me</a>
             </div>
             <div class="landingCol1">
               <h2><a href="https://app.hellobonsai.com/s/hamish-tennent/discovery-call" target="_blank">Schedule a call</a> or <a href="#" data-decode-email="684-361-355-371-377-514-486-389-649-706-360-342-364-381-520-485-429-637-694-355-360-359-326-514-481-434">send a message</a>, let’s chat about how to work together.</h2>
@@ -300,10 +302,10 @@
             <div class="footerfootprint">This website uses 0.046 of carbon, less than 98% of other websites</div>
             <div class="footerlinks">
               <div class="footerlink" style="background-image: url('../img/logo_arena.png')">
-                <a href="are.na/hamish-t"></a>
+                <a href="https://www.are.na/hamish-t"></a>
               </div>
               <div class="footerlink" style="background-image: url('../img/logo_linkedin.png')">
-                <a href="https://www.are.na/hamish-t" target="_blank"></a>
+                <a href="https://www.linkedin.com/in/mynameishamish/" target="_blank"></a>
               </div>
               <!-- <div class="footerlink" style="background-image: url('../img/arena.png')">
                 <a href="are.na/hamish-t"></a>

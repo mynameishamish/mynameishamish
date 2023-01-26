@@ -80,7 +80,7 @@
 DataProtect = DataProtect.DataProtect
 
 const options = {
-  key: 'u2138SJAl', // just a random string
+  key: 'u2138SJAl',
   x: 5
 }
 
@@ -89,7 +89,10 @@ function emailprotect() {
         document.querySelectorAll('[data-decode-email]').forEach(e => {
           const decoded = DataProtect.decodeData(e.getAttribute('data-decode-email'), options)
           e.href = "mailto:" + decoded + "?subject=Contact"
-          // e.textContent = decoded
+
+          if (e.textContent == 'loading...') {
+            e.textContent = ' ' + decoded
+          }
         })
       }, 3000) // set delay here
 }
@@ -97,7 +100,12 @@ function emailprotect() {
 window.setTimeout(() => {
   document.querySelectorAll('[data-decode-email]').forEach(e => {
     const decoded = DataProtect.decodeData(e.getAttribute('data-decode-email'), options)
-    e.href = "mailto:" + decoded + "?subject=Contact"
-    e.textContent = decoded
+    if (e.classList.contains("decoded")) {
+
+    } else {
+        e.href = "mailto:" + decoded + "?subject=Contact"
+        // e.textContent = "email " + decoded;
+        e.classList.add("decoded");
+    }
   })
 }, 3000) // set delay here
