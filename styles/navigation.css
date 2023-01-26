@@ -7,7 +7,7 @@
   width: 100%;
   z-index: 2;
 
-  padding-top: 16px;
+  padding-top: 8px;
   padding-bottom: 16px;
 
   display: flex;
@@ -15,7 +15,10 @@
   justify-content: center;
   align-items: baseline;
 
-  border-bottom: 2px solid var(--primary-color); 
+  border-bottom: solid var(--line-width) var(--primary-color); 
+
+  padding-left: var(--horizontal-padding);
+  padding-right: var(--horizontal-padding);
 
 
 }
@@ -30,7 +33,7 @@
 }
 
 #headerTitle {
-  font-size: 100pt;
+  
 }
 
 .headerLinks {
@@ -40,18 +43,18 @@
 
 .headerLinks a {
   list-style-type: none;
-  margin-left: 16px;
+  margin-left: 8px;
 }
 
 .headerLinks .extLink {
-  font-size: 10pt;
+  font-size: 8pt;
 }
 
 
 .header a {
   text-decoration: none;
   color: var(--nav-link);
-  border-bottom: 0.1em solid var(--nav-underline);
+  /* border-bottom: 0.1em solid var(--nav-underline); */
 }
 
 .header a:hover, .header a.selected {
@@ -65,7 +68,6 @@
 
 
 
-
 /*Page Transition*/
 div.wiper {
   position:fixed;
@@ -74,7 +76,7 @@ div.wiper {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: blue;
+  background-color: var(--primary-color);
 
   transform: translate(-100%, 0);
 

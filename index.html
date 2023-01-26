@@ -6,19 +6,32 @@
     
     <title>hamish t</title>
 
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favico/favicon-16x16.png">
+    <link rel="manifest" href="/favico/site.webmanifest">
+    <link rel="mask-icon" href="/favico/safari-pinned-tab.svg" color="#5bbad5">
+
     <link href="styles/_base.css" rel="stylesheet">
     <link href="styles/mainstyle.css" rel="stylesheet">
     <link href="styles/navigation.css" rel="stylesheet">    
+    <link href="styles/textstyles.css" rel="stylesheet">  
+
+    <link href="../styles/services.css" rel="stylesheet">
+    <link href="../styles/projects.css" rel="stylesheet">
+    
+    
 
   </head>
-  <body> 
+  <body"> 
     <main data-barba="wrapper">
 
 
         <header class="header">
           <div class="headercontainer">
           <div id="headerTitle">
-            Hamish Tennent
+            <h1 class="navHeader" id="navTitle" style="" >hamish tennent</h1>
           </div>
           <div class="headerLinks">
           <nav>
@@ -26,53 +39,307 @@
             <a href="/work.html">Work</a>
             <a href="/services.html">Services</a>
             <a href="/about.html">About</a>
-            <a class="extLink">CV</a>
-            <a class="extLink">Lab</a> 
+            <button class="extLink" style="margin-left: 8px; padding: .25rem .5rem .25rem .5rem">CV</button>
+            <button class="extLink" style="margin-left:8px; padding: .25rem .5rem .25rem .5rem">Lab</button> 
           </nav>
         </div>
       </div>
         </header>
 
-      <article data-barba="container">        
+     
     
         <div class="content">
 
+          <article data-barba="container">   
+          <!-- <div class="videocontainer">
+            <video width="100%" autoplay loop muted>
+              <source src="img/micbot-banner1-264.mp4" type="/video/mp4; codecs=hevc" />
+              <source src="img/micbot-banner1.webm" type="video/webm; codecs=vp9" />
+              <source src="img/micbot-banner1.mp4" type="video/mp4" />
+            </video>
+          </div> -->
+
+
+
           <div class="landing" id="landing">
-            <div class="landingCol1">
+
+            <div class="landinggallery" id="gallery">
+              <a class="landinggalleryslide" href="" rel="">
+                <div class="gallerypic">
+                  <picture>
+                    <source type="image/avif" src="img/avif/im-portrait-d.avif"/>
+                    <source type="image/webp" src="img/webp/im-portrait-d.webp" />
+                    <img src="img/im-portrait-d.png" 
+                    onmouseover="thumb(this),this.src='img/im-portrait.png'" 
+                    onmouseout="thumbOut(this),this.src='img/im-portrait-d.png'" 
+                    alt="more information about the volkswagen inclusive mobility project"/>
+                  </picture>
+                </div>
+              </a>
+  
+              <a class="landinggalleryslide" href="" rel="">
+                <div class="gallerypic">
+                  <picture>
+                    <source type="image/avif" src="img/avif/spyderbot-portrait-d.avif"/>
+                    <source type="image/webp" src="img/webp/spyderbot-portrait-d.webp" />
+                    <img src="img/spyderbot-portrait-d.png" 
+                    onmouseover="thumb(this),this.src='img/spyderbot-portrait.png'" 
+                    onmouseout="thumbOut(this),this.src='img/spyderbot-portrait-d.png'" 
+                    alt="more information about the spyderbot social robotics project"/>
+                  </picture>
+                </div>
+              </a>  
+  
+              <a class="landinggalleryslide" href="" rel="">
+                <div class="gallerypic">
+                  <picture>
+                    <source type="image/avif" src="img/avif/vw-portrait-d.avif"/>
+                    <source type="image/webp" src="img/webp/vw-portrait-d.webp" />
+                    <img src="img/vw-portrait-d.png" 
+                    onmouseover="thumb(this),this.src='img/vw-portrait.png'" 
+                    onmouseout="thumbOut(this),this.src='img/vw-portrait-d.png'" 
+                    alt="more information about the volkswagen self driving card project"/>
+                  </picture>
+                </div> 
+              </a> 
+                  
+              <a class="landinggalleryslide" href="" rel="">
+                <div class="gallerypic">
+                  <picture>
+                    <source type="image/avif" src="img/avif/portal-portrait-d.avif"/>
+                    <source type="image/webp" src="img/webp/portal-portrait-d.webp" />
+                    <img src="img/portal-portrait-d.png" 
+                    onmouseover="thumb(this),this.src='img/portal-portrait.png'" 
+                    onmouseout="thumbOut(this),this.src='img/portal-portrait-d.png'" 
+                    alt="more information about the facebook/meta portal project"/>
+                  </picture>
+                </div>  
+                    
+              <a class="landinggalleryslide" href="" rel="">
+                <div class="gallerypic">
+                  <picture>
+                    <source type="image/avif" src="img/avif/audi-portrait-d.avif"/>
+                    <source type="image/webp" src="img/webp/audi-portrait-d.webp" />
+                    <img src="img/audi-portrait-d.png" 
+                    onmouseover="thumb(this),this.src='img/audi-portrait.png'" 
+                    onmouseout="thumbOut(this),this.src='img/audi-portrait-d.png'" 
+                    alt="more information about the audi HMI projects"/>
+                  </picture>
+                </div> 
+              </a>
+                
+              <a href="" class="landinggalleryslide" rel="">
+                <div class="gallerypic">
+                  <picture>
+                    <source type="image/avif" src="img/avif/sparse-portrait-d.avif"/>
+                    <source type="image/webp" src="img/webp/sparse-portrait-d.webp" />
+                    <img src="img/sparse-portrait-d.png" 
+                    onmouseover="thumb(this),this.src='img/sparse-portrait.png'" 
+                    onmouseout="thumbOut(this),this.src='img/sparse-portrait-d.png'" 
+                    alt="more information about the sparse bicycle accessories projects"/>
+                  </picture>
+                </div> 
+              </a>      
+              
+              <a href="" class="landinggalleryslide" rel="">
+                <div class="gallerypic">
+                  <picture>
+                    <source type="image/avif" src="img/avif/micbot-portrait-d.avif"/>
+                    <source type="image/webp" src="img/webp/micbot-portrait-d.webp" />
+                    <img src="img/micbot-portrait-d.png" 
+                    onmouseover="thumb(this),this.src='img/micbot-portrait.png'" 
+                    onmouseout="thumbOut(this),this.src='img/micbot-portrait-d.png'" 
+                    alt="more information about the robot and human social dynamics research"/>
+                  </picture>
+                </div> 
+              </a> 
+  
+  
+  
+              </a>
   
             </div>
+
+            
+            <div class="landingcol">
+              <div class="landingCol1">
+                <h2>Designing products and services that ground new technologies into useful realities.</h2>
+  
+              </div>
+              <div class="landingCol2">
+                <!--Optional-->
+                <div class="landingCol2Upper">
+                  <p style="text-align: end;">I work with companies looking to ensure that their new idea can create a better future. </p>
+    
+                </div>
+                <div class="landingCol2Lower" style="display: flex;/*! flex-direction: column; */justify-content: end;">
+                  <button>see how i do this</button>
+                </div>
+              </div> 
+            </div>
+
+            <div class="contentcontainer" style="border-top: solid var(--line-width) var(--primary-color)">
+              <div class="content1">
+                <div class="contenttextblock">
+                  <p><a>Volkswagen Group of America</a></p>
+                </div>
+                <div class="contenttextblock">
+                  <p>Designing next generation self driving vehicles to improve tomorrows mobility landscape.</p>
+                </div>
+                <div class="contenttextblock">
+                  <button onmouseover="imageswitchon(this.closest('.contentcontainer'),`vw-thumb`)"
+                  onmouseout="imageswitchoff(this.closest('.contentcontainer'),`vw-thumb`)">See More Projects</button>
+                </div>                
+
+              </div>
+              <div class="content2">
+                <div class="contentimage">
+                  <picture class="">
+                    <source/>
+                    <img src="img/vw-thumb-d.png" 
+                    onmouseover="thumb(this),this.src='img/vw-thumb.png'" 
+                    onmouseout="thumbOut(this),this.src='img/vw-thumb-d.png'" 
+                    alt="more information about the volkswagen projects"/>
+                  </picture>
+                </div>
+              </div>
+            </div>
+
+            <div class="landingservices">
+              <div class="landingservicesbanner">
+                <div style="flex:2">
+                  <h4>Take your idea from; 0 to 1, napkin sketch to on the shelves, from where you are to where you need to be.</h4>
+                </div>
+                <div style="flex:1">
+                  <button>See Design Services</button>
+                </div>
+              </div>
+
+              <div class="landingservicesblocks">
+
+                <div class="landingservicesblock">
+                  <div class="">
+                    <h4>Research</h4>
+                  </div>
+                  <div class="">
+                    <p>Elegantly solve strongly felt pain points.</p>
+                  </div>
+                </div>
+                <div class="landingservicesblock">
+                  <div class="">
+                    <h4>Design</h4>
+                  </div>
+                  <div class="">
+                    <p>Elegantly solve strongly felt pain points.</p>
+                  </div>
+                </div>
+                <div class="landingservicesblock">
+                  <div class="">
+                    <h4>Build</h4>
+                  </div>
+                  <div class="">
+                    <p>Experience prototyping to give us a North Star.</p>
+                  </div>
+                </div>
+                <div class="landingservicesblock">
+                  <div class="">
+                    <h4>Test</h4>
+                  </div>
+                  <div class="">
+                    <p>Testing with those who can benefit the most.</p>
+                  </div>
+                </div>
+                <div class="landingservicesblock">
+                  <div class="">
+                    <h4>Iterate</h4>
+                  </div>
+                  <div class="">
+                    <p>Building features sets while keeping our magic..</p>
+                  </div>
+                </div>
+                <div class="landingservicesblock">
+                  <div class="">
+                    <h4>Package</h4>
+                  </div>
+                  <div class="">
+                    <p>Future proofing our design intention for production. </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="landingbanner">
+              <div class="buffer"></div>
+              <div id="scroll-container">
+                <div id="scroll-text">
+                  <div class="scrollblock">Making mobility more accessible.
+                  </div>
+                  <div class="scrollblock">Building new paradigms for social robot.
+                  </div>
+                  <div class="scrollblock">Bringing autonomous vehicles from concept into reality.
+                  </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="landingcontact">
             <div class="landingCol2">
-              <!--Optional-->
-              <div class="landingCol2Left">
-  
+              <p>Based in Taipei, Born in Aotearoa New Zealand, 1/2 of <a href="http://earthbodies.website/" target="_blank">earthbodies</a>.</p>
+              <button style="width:fit-content">more about me</button>
+            </div>
+            <div class="landingCol1">
+              <h2>Schedule a call or send a message, let’s chat about how to work together.</h2>
+            </div>
+          </div>
+
+          <div class="footer">
+            <div class="footerfootprint">This website uses 0.046 of carbon, less than 98% of other websites</div>
+            <div class="footerlinks">
+              <div class="footerlink" style="background-image: url('../img/logo_arena.png')">
+                <a href="are.na/hamish-t"></a>
               </div>
-              <div class="landingCol2Right">
-                Home
+              <div class="footerlink" style="background-image: url('../img/logo_linkedin.png')">
+                <a href="https://www.are.na/hamish-t" target="_blank"></a>
               </div>
-            </div>    
+              <!-- <div class="footerlink" style="background-image: url('../img/arena.png')">
+                <a href="are.na/hamish-t"></a>
+              </div>               -->
+            </div>
           </div>
   
-  
-          <div class="container">
-            <img id ="home-button" src="https://tinyurl.com/hvbs9ch" height=100 width=100><br>
-          <button>click here</button>
-          </div>
   
         </div>
 
+        <script
+          src="https://code.jquery.com/jquery-3.6.3.slim.js"
+          integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc="
+          crossorigin="anonymous"></script>
+  
+    <script type="text/javascript" src="scripts/jquery-min.js"></script>      
+  
+    <script type="text/javascript" src="scripts/barba.js"></script>
+    <script type="text/javascript" src="scripts/barba-prefetch.js"></script>
+    <script type="text/javascript" src="scripts/gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script> 
+    <script type="text/javascript" src="scripts/navigation.js"></script>
+  
+    <script type="text/javascript" src="scripts/shrinktitle.js"></script>
+    <script type="text/javascript" src="scripts/landinggallery.js"></script>
+    <script type="text/javascript" src="scripts/imageswitcher.js"></script>
+
       </article>
+
+        </div>
     </main>
 
 
 
   </body>
 
-  <script type="text/javascript" src="scripts/barba.js"></script>
-  <script type="text/javascript" src="scripts/barba-prefetch.js"></script>
-  <script type="text/javascript" src="scripts/gsap.js"></script>
-  <script type="text/javascript" src="scripts/navigation.js"></script>
 
-  <script type="text/javascript" src="scripts/shrinktitle.js"></script>
 
 
 </html>

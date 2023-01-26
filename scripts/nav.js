@@ -1,32 +1,32 @@
-var headerTitle = document.getElementById("headerTitle");
-var header = document.getElementById("header");
-var sticky = header.offsetTop;
-var banner = document.getElementById("banner");
+// var headerTitle = document.getElementById("headerTitle");
+// var header = document.getElementById("header");
+// var sticky = header.offsetTop;
+// var banner = document.getElementById("banner");
 
 
 
-var headerSize = 50
-document.getElementById("headerTitle").style.fontSize = `${headerSize}pt`
+// var headerSize = 50
+// document.getElementById("headerTitle").style.fontSize = `${headerSize}pt`
 
 
 
 
-document.addEventListener("scroll", (event) => {
+// document.addEventListener("scroll", (event) => {
 
-  if (window.scrollY < 80) {
+//   if (window.scrollY < 80) {
 
-  yPos = window.scrollY / 3;
-  newSize = headerSize - yPos;
+//   yPos = window.scrollY / 3;
+//   newSize = headerSize - yPos;
 
-  // console.log(newSize)
+//   // console.log(newSize)
 
-  fontSize = `${newSize}pt`;
+//   fontSize = `${newSize}pt`;
 
-  headerTitle.style.fontSize = `${newSize}pt`
+//   headerTitle.style.fontSize = `${newSize}pt`
 
-  }
+//   }
 
-});
+// });
 
 
 

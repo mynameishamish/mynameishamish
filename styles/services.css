@@ -1,0 +1,219 @@
+.landing {
+    width: 100%;
+    max-width: var(--container-width);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.horizontaldivider {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-top: var(--line-width) solid;
+    border-bottom: var(--line-width) solid;
+    border-color: var(--primary-color);
+}
+
+.dividercontent1 {
+    width: 100%;
+    border-bottom: var(--line-width) solid;
+    border-color: var(--primary-color);
+    padding: 1rem 0 1rem var(--horizontal-padding);
+}
+
+.dividercontent2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.dividercontentblock {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1rem;
+    padding: 2rem 3rem 2rem 3rem;
+}
+
+.dividerblocktext {
+
+}
+
+
+.servicesblock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: var(--background);
+    background-color: var(--primary-color);
+}
+
+.servicesheader {
+    width: 100%;
+    border-color: var(--background);
+    /* border-top: solid var(--line-width); */
+    /* border-bottom: solid var(--line-width); */
+    padding: 1rem var(--horizontal-padding) 1rem var(--horizontal-padding);
+
+}
+
+.servicescontainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.servicescard {
+    display: flex;
+    flex-direction: column;
+    width: 33.33333%;
+    border: var(--line-width) solid;
+    border-color: var(--background);
+}
+
+.servicespic img{
+    background-color: var(--primary-color);
+    mix-blend-mode: screen;
+}
+
+.servicescardtext {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem var(--horizontal-padding) 2rem var(--horizontal-padding);
+}
+
+.servicesbutton {
+    width: fit-content;
+}
+
+.landingCol1 {
+    width: 66%;
+    flex:none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.landingcontact {
+    width: 100%;
+    padding: 2rem var(--horizontal-padding) 2rem var(--horizontal-padding);
+}
+
+.aboutheader {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 100%; 
+    height: 50vh;
+    padding-bottom: 4rem;
+
+}
+
+.aboutname {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 var(--horizontal-padding) 0 var(--horizontal-padding);
+}
+
+.aboutnamecontent {
+    padding: 0 var(--horizontal-padding) 0 var(--horizontal-padding); 
+}
+
+.aboutspacer {
+    padding: 2rem var(--horizontal-padding) 2rem var(--horizontal-padding);
+    background-color: var(--primary-color);
+    color: var(--background);
+    width: 100%;
+}
+
+.aboutarenablock {
+    width: 100%;
+    border: var(--line-width) solid;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.aboutarenacontent {
+    background-color: var(--primary-color);
+    min-height: 20vh;
+    min-width: 20vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.aboutinspiration {
+    width: 100%;
+    padding: 2rem var(--horizontal-padding) 2rem var(--horizontal-padding);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+
+.projectblock {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 2rem var(--horizontal-padding) 2rem var(--horizontal-padding);
+    border-top: solid var(--line-width);
+    border-color: var(--primary-color);
+}
+
+.projectimage {
+    flex: 1;
+    background-color: var(--primary-color);
+
+}
+
+.projectimage img{
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: hard-light;
+    mix-blend-mode: screen;
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+
+}
+
+.projectinfo {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.projectslinks {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+
+
+
+@media (max-width: 1000px) {
+    .servicescard {
+        width: 50%;
+    }
+  }
