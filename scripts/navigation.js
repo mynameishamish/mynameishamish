@@ -81,6 +81,7 @@ barba.init({
             if (currentLocation == '/index.html') {
                 gsap.delayedCall(.25, moveGallery);
             }
+            emailprotect();
 
         }
     }
