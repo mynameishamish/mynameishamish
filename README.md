@@ -14,3 +14,10 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+**Website directory for my [portfolio website][https://mynameishamish.com]**
+
+To Do:
+- [] Mobile friendly project pages
+- [] Cleanup header sizing at smaller sizes
+

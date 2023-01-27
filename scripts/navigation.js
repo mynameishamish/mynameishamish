@@ -37,6 +37,8 @@ barba.init({
 
             const headerLinks = document.querySelectorAll("header a")
             const href = next.url.path
+
+            window.scrollTo(0, 0);
     
             headerLinks.forEach(link => {
               if (link.getAttribute("href") === href) {

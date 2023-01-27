@@ -17,8 +17,8 @@
 
   border-bottom: solid var(--line-width) var(--primary-color); 
 
-  padding-left: var(--horizontal-padding);
-  padding-right: var(--horizontal-padding);
+  /* padding-left: var(--horizontal-padding);
+  padding-right: var(--horizontal-padding); */
 
 
 }
