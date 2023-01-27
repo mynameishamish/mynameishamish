@@ -108,6 +108,13 @@
         line-height: normal;
     }
 
+    .footerh6 {
+        font-size: var(--text-detail);
+        font-weight: normal;
+        letter-spacing: .05em;
+        text-transform:none;
+    }
+
     
     .button {
         font-size: var(--text-detail);

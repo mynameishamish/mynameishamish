@@ -76,9 +76,9 @@ barba.init({
             adjustHeader();
 
             var currentLocation = window.location.pathname;
-            if (currentLocation == '/about.html') {
-                // arenafetch();
-            };
+            // if (currentLocation == '/about.html') {
+            //     // arenafetch();
+            // };
 
             if (currentLocation == '/index.html') {
                 gsap.delayedCall(.25, moveGallery);
@@ -88,9 +88,9 @@ barba.init({
         },
         after: () => {
             var currentLocation = window.location.pathname;
-            if (currentLocation == '/about.html') {
-                arenafetch();
-            };
+            // if (currentLocation == '/about.html') {
+            //     arenafetch();
+            // };
         }
     }
 ],
