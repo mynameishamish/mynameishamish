@@ -77,7 +77,7 @@ barba.init({
 
             var currentLocation = window.location.pathname;
             if (currentLocation == '/about.html') {
-                arenafetch();
+                // arenafetch();
             };
 
             if (currentLocation == '/index.html') {
@@ -85,6 +85,12 @@ barba.init({
             }
             emailprotect();
 
+        },
+        after: () => {
+            var currentLocation = window.location.pathname;
+            if (currentLocation == '/about.html') {
+                arenafetch();
+            };
         }
     }
 ],
@@ -113,6 +119,11 @@ headerSize = comp.fontSize
 window.addEventListener("load", (event) => {
     var header = document.querySelector("header");
     landingcontainer.style.marginTop = `${header.offsetHeight}px`;
+
+    var currentLocation = window.location.pathname;
+    if (currentLocation == '/about.html') {
+        arenafetch();
+    };
 
 });
 
