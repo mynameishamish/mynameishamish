@@ -1,4 +1,3 @@
-### Hi there 👋
 
 <!--
 **mynameishamish/mynameishamish** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -15,9 +14,9 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-**Website directory for my [portfolio website][https://mynameishamish.com]**
+### Website directory for my [portfolio website](https://mynameishamish.com)
 
-To Do:
-- [] Mobile friendly project pages
-- [] Cleanup header sizing at smaller sizes
+## To Do:
+- [ ] Mobile friendly
+- [ ] Cleanup header sizing at smaller sizes
 
